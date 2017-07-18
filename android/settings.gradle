@@ -1,0 +1,3 @@
+rootProject.name = 'SevenMSolutions'
+
+include ':app'
