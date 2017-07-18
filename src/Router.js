@@ -35,23 +35,11 @@ const RouterComponent = () => {
 // COLORS:
 // cream: #FAEFCC
 // off black: #333
-// peachy: #DB6F59
-// light peachy: #FEE0D5
-// yellowy peach: #F8AA84
-// brownish peach: #DB995A
+// darker green: #60993E
+// lighter green: #A1E44D
+// blue: #3C91CA
+
 // tealy: #00A5A5
 // lighter teal: #79D2CA
-// purpley: #576AAC
-// magenta-y: #AF506C
-// navy: #354370
-// maroon: #590925
 
-// purpley: #576AAC
-// different purple #5D5D81
-// darker purple #3B3355
-// light blue #BFCDE0
-// white-ish mint #F4F9E9
-// dark grey #B4B8AB
-// dark mint #71B48D
-// gold #FFC857
 export default RouterComponent;
