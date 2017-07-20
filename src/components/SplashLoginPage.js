@@ -30,31 +30,33 @@ class SplashLoginPage extends Component {
 
          </CardSection>
 
-        <View style={styles.imageViewStyle}>
-          <Grid>
-            <Row>
+
+
               <Button>
-                <Text style={styles.textStyle}>
+                <Text>
                   Contact List
                 </Text>
               </Button>
-            </Row>
 
-            <Row>
-              <Text style={styles.textStyle}>
-                Task List
-              </Text>
-            </Row>
+              <Button>
+                <Text>
+                  Task List
+                </Text>
+              </Button>
 
-            <Row>
-              <Text style={styles.textStyle}>
-                Prospect List
-              </Text>
-            </Row>
-          </Grid>
+              <Button>
+                <Text>
+                  Prospect List
+                </Text>
+              </Button>
+
+              <Button>
+                <Text>
+                  How to use
+                </Text>
+              </Button>
 
 
-        </View>
       </Image>
     );
   };
