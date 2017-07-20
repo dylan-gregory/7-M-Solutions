@@ -18,7 +18,7 @@ const Button = (props) => {
 
 const styles = {
   textStyle: {
-    fontFamily: 'Ubuntu',
+    fontFamily: 'Play',
     alignSelf: 'center',
     color: '#333',
     fontSize: 16,
@@ -31,12 +31,12 @@ const styles = {
     flex: 1,
     alignSelf: 'stretch',
     height: 44,
-    alignItems: 'center',
+    // alignItems: 'flex-start',
     justifyContent: 'center',
-    backgroundColor: '#BFCDE0',
-    borderBottomWidth: 3,
-    borderBottomColor: '#576AAC',
-    borderRadius: 5,
+    backgroundColor: 'rgba(0,0,0,0)',
+    borderBottomWidth: 1,
+    borderBottomColor: '#fff',
+    // borderRadius: 5,
     margin: 6,
     paddingHorizontal: 16,
     paddingVertical: 8,

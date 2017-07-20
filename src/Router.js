@@ -10,7 +10,7 @@ const RouterComponent = () => {
       navigationBarStyle={{ backgroundColor: '#576AAC' }}
       barButtonIconStyle={{ tintColor: '#fff' }}
       rightButtonTextStyle={{ color: '#fff' }}
-      titleStyle={{ fontSize: 20, color: '#fff' }}
+      titleStyle={{ fontFamily: 'Play', fontSize: 20, color: '#fff' }}
     >
 
             {/* add this prop to the scene to change the header font
