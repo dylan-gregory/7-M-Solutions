@@ -1,6 +1,10 @@
 import React from 'react';
 import { Scene, Router, Actions } from 'react-native-router-flux';
 import SplashLoginPage from './components/SplashLoginPage';
+import ContactList from './components/ContactList';
+import TaskList from './components/TaskList';
+import ProspectList from './components/ProspectList';
+import Instructions from './components/Instructions';
 
 
 const RouterComponent = () => {
@@ -23,6 +27,30 @@ const RouterComponent = () => {
           title="7rM"
           titleStyle={{ fontSize: 25 }}
           initial
+        />
+
+        <Scene
+          key="contacts"
+          component={ContactList}
+          title="Contacts"
+        />
+
+        <Scene
+          key="tasks"
+          component={TaskList}
+          title="Tasks"
+        />
+
+        <Scene
+          key="prospects"
+          component={ProspectList}
+          title="Prospects"
+        />
+
+        <Scene
+          key="instructions"
+          component={Instructions}
+          title="Instructions"
         />
 
       </Scene>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, Image, View } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
+import { Actions } from 'react-native-router-flux';
 import { Card, CardSection, Button } from './common';
 
 class SplashLoginPage extends Component {
@@ -32,25 +33,25 @@ class SplashLoginPage extends Component {
 
 
 
-              <Button>
+              <Button onPress={() => { Actions.contacts() }}>
                 <Text>
                   Contact List
                 </Text>
               </Button>
 
-              <Button>
+              <Button onPress={() => { Actions.tasks() }}>
                 <Text>
                   Task List
                 </Text>
               </Button>
 
-              <Button>
+              <Button onPress={() => { Actions.prospects() }}>
                 <Text>
                   Prospect List
                 </Text>
               </Button>
 
-              <Button>
+              <Button onPress={() => { Actions.instructions() }}>
                 <Text>
                   How to use
                 </Text>
