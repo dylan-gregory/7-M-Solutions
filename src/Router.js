@@ -7,7 +7,7 @@ const RouterComponent = () => {
   return(
     <Router
       sceneStyle={{ paddingTop: 65, backgroundColor: '#333'}}
-      navigationBarStyle={{ backgroundColor: '#576AAC' }}
+      navigationBarStyle={{ backgroundColor: 'black' }}
       barButtonIconStyle={{ tintColor: '#fff' }}
       rightButtonTextStyle={{ color: '#fff' }}
       titleStyle={{ fontFamily: 'Play', fontSize: 20, color: '#fff' }}
@@ -21,7 +21,7 @@ const RouterComponent = () => {
           key="splash"
           component={SplashLoginPage}
           title="7rM"
-          titleStyle={{ fontSize: 20, letterSpacing: 3 }}
+          titleStyle={{ fontSize: 25 }}
           initial
         />
 

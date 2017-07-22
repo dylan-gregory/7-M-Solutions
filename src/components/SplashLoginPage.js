@@ -7,7 +7,7 @@ class SplashLoginPage extends Component {
   render() {
     return (
       <Image
-        source={require('../images/metal-bg.jpg')}
+        source={require('../images/leatherish-bg.jpg')}
         style={styles.backgroundImageStyle}
       >
 
