@@ -3,14 +3,24 @@ import { Text, Image, View } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Actions } from 'react-native-router-flux';
 import { Card, CardSection, Button } from './common';
-import ContactItem from './ContactItem';
 
-class ContactList extends Component {
+class ContactItem extends Component {
   render(){
     return (
-      <ContactItem></ContactItem>
+      <Card>
+        <CardSection>
+          <Text style={styles.textStyle}>Photo?/Client Name</Text>
+        </CardSection>
+      </Card>
     );
   };
 };
 
-export default ContactList;
+const styles = {
+  textStyle: {
+    fontFamily: 'Play',
+    fontSize: 20
+  }
+}
+
+export default ContactItem;

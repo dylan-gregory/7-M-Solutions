@@ -75,6 +75,7 @@ const styles = {
     width: 360,
   },
   headerTextStyle: {
+    fontFamily: 'Play',
     color: '#fff',
     fontSize: 20,
     backgroundColor: 'rgba(0,0,0,0)'
