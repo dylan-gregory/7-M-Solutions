@@ -5,6 +5,9 @@ import ContactList from './components/ContactList';
 import TaskList from './components/TaskList';
 import ProspectList from './components/ProspectList';
 import Instructions from './components/Instructions';
+import NewContact from './components/NewContact';
+import NewTask from './components/NewTask';
+import NewProspect from './components/NewProspect';
 
 
 const RouterComponent = () => {
@@ -38,6 +41,12 @@ const RouterComponent = () => {
         />
 
         <Scene
+          key="newContact"
+          component={NewContact}
+          title="New Contact"
+        />
+
+        <Scene
           key="tasks"
           component={TaskList}
           title="Tasks"
@@ -46,11 +55,23 @@ const RouterComponent = () => {
         />
 
         <Scene
+          key="newTask"
+          component={NewTask}
+          title="New Task"
+        />
+
+        <Scene
           key="prospects"
           component={ProspectList}
           title="Prospects"
           rightTitle="Add +"
           onRight={() => { Actions.newProspect() }}
+        />
+
+        <Scene
+          key="newProspect"
+          component={NewProspect}
+          title="New Prospect"
         />
 
         <Scene
