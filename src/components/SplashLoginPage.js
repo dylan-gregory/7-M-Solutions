@@ -12,24 +12,21 @@ class SplashLoginPage extends Component {
         style={styles.backgroundImageStyle}
       >
 
-         <CardSection>
-          <Grid>
-            <Col>
+          <Grid style={{ borderBottomWidth: 1, borderBottomColor: '#fff', padding: 5 }}>
+            <Col style={{ alignItems: 'center', justifyContent: 'center', paddingVertical: 15 }}>
               <Row>
-                <Text>John Doe</Text>
+                <Text style={styles.headerTextStyle}>John Doe</Text>
               </Row>
-              <Text>Sales Rep</Text>
+              <Text style={styles.headerTextStyle}>Sales Rep</Text>
             </Col>
 
             <Col>
-              <Image source={require('../images/7MS-logo-black.png')}
+              <Image source={require('../images/7MS-logo-white.png')}
               style={{ height: 100, width: null }}
               />
             </Col>
           </Grid>
 
-
-         </CardSection>
 
 
 
@@ -77,10 +74,16 @@ const styles = {
     height: 130,
     width: 360,
   },
+  headerTextStyle: {
+    color: '#fff',
+    fontSize: 20,
+    backgroundColor: 'rgba(0,0,0,0)'
+  },
   textStyle: {
     color: '#fff',
     fontSize: 30
-  }
+  },
+
 }
 
 export default SplashLoginPage;

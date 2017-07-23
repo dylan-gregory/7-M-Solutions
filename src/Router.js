@@ -11,7 +11,7 @@ const RouterComponent = () => {
   return(
     <Router
       sceneStyle={{ paddingTop: 65, backgroundColor: '#333'}}
-      navigationBarStyle={{ backgroundColor: 'black' }}
+      navigationBarStyle={{ backgroundColor: 'grey' }}
       barButtonIconStyle={{ tintColor: '#fff' }}
       rightButtonTextStyle={{ color: '#fff' }}
       titleStyle={{ fontFamily: 'Play', fontSize: 20, color: '#fff' }}
