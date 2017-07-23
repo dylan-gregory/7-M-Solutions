@@ -13,7 +13,7 @@ const RouterComponent = () => {
       sceneStyle={{ paddingTop: 65, backgroundColor: '#333'}}
       navigationBarStyle={{ backgroundColor: 'grey' }}
       barButtonIconStyle={{ tintColor: '#fff' }}
-      rightButtonTextStyle={{ color: '#fff' }}
+      rightButtonTextStyle={{ color: '#fff', fontFamily: 'Play' }}
       titleStyle={{ fontFamily: 'Play', fontSize: 20, color: '#fff' }}
     >
 
@@ -33,18 +33,24 @@ const RouterComponent = () => {
           key="contacts"
           component={ContactList}
           title="Contacts"
+          rightTitle="Add +"
+          onRight={() => { Actions.newContact() }}
         />
 
         <Scene
           key="tasks"
           component={TaskList}
           title="Tasks"
+          rightTitle="Add +"
+          onRight={() => { Actions.newTask() }}
         />
 
         <Scene
           key="prospects"
           component={ProspectList}
           title="Prospects"
+          rightTitle="Add +"
+          onRight={() => { Actions.newProspect() }}
         />
 
         <Scene
