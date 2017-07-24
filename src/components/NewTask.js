@@ -12,32 +12,32 @@ class NewTask extends Component {
         <Content>
           <Form>
             <Text style={styles.textStyle}>Client Name</Text>
-            <Item inlineLabel>
-              <Label>First</Label>
-              <Input />
+            <Item >
+              <Input placeholder="First"/>
             </Item>
 
-            <Item inlineLabel>
-              <Label>Last</Label>
-              <Input />
+            <Item>
+              <Input placeholder="Last"/>
+            </Item>
+
+            <Text style={styles.textStyle}>Task Description</Text>
+            <Item>
+              <Input placeholder="Lunch at Sully's, etc" />
             </Item>
 
             <Text style={styles.textStyle}>Phone Number</Text>
-            <Item inlineLabel>
-              <Label>###-###-####</Label>
-              <Input />
+            <Item>
+              <Input placeholder="555-555-5555" />
             </Item>
 
-            <Text style={styles.textStyle}>Email</Text>
-            <Item inlineLabel>
-              <Label>bob@gmail.com</Label>
-              <Input />
+            <Text style={styles.textStyle}>Date</Text>
+            <Item>
+              <Input placeholder="Will have datepicker here"/>
             </Item>
 
-            <Text style={styles.textStyle}>Mailing Address</Text>
-            <Item inlineLabel>
-              <Label>123 Main St.</Label>
-              <Input />
+            <Text style={styles.textStyle}>Last Touch</Text>
+            <Item>
+              <Input placeholder="Maybe another datepicker"/>
             </Item>
 
             <Button>
@@ -58,10 +58,6 @@ const styles = {
     fontSize: 18,
     paddingTop: 20,
     paddingLeft: 15
-  },
-  rowStyle: {
-    padding: 15,
-    alignItems: 'center'
   },
   inputStyle: {
     flexGrow: 2
