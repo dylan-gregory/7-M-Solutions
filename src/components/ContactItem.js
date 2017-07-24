@@ -14,7 +14,6 @@ class ContactItem extends Component {
             <Thumbnail source={require('../images/7MS-logo-black.png')} />
             <Text style={styles.textStyle}>Client Name</Text>
           </Left>
-
         </CardItem>
       </Card>
     );

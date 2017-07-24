@@ -1,48 +1,51 @@
 import React, { Component } from 'react';
-import { Text, Image, View } from 'react-native';
+import { Image, View } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import { Actions } from 'react-native-router-flux';
-import { Card, CardSection, Button, Input } from './common';
+import { Container, Content, CardItem, Left, Body, Thumbnail, Right, Text, Form, Item, Input, Label } from 'native-base';
+import { Card, CardSection, Button } from './common';
 
 class NewTask extends Component {
   render(){
     return (
-        <Grid>
-          <Row style={styles.rowStyle}>
+      <Container>
+        <Content>
+          <Form>
             <Text style={styles.textStyle}>Client Name</Text>
+            <Item inlineLabel>
+              <Label>First</Label>
+              <Input />
+            </Item>
 
-            <Input style={styles.inputStyle} placeholder="First" />
-          </Row>
+            <Item inlineLabel>
+              <Label>Last</Label>
+              <Input />
+            </Item>
 
-          <Row style={styles.rowStyle}>
-              <Input style={styles.inputStyle} placeholder="Last" />
-          </Row>
+            <Text style={styles.textStyle}>Phone Number</Text>
+            <Item inlineLabel>
+              <Label>###-###-####</Label>
+              <Input />
+            </Item>
 
-          <Row style={styles.rowStyle}>
+            <Text style={styles.textStyle}>Email</Text>
+            <Item inlineLabel>
+              <Label>bob@gmail.com</Label>
+              <Input />
+            </Item>
 
-              <Text style={styles.textStyle}>Phone Number</Text>
+            <Text style={styles.textStyle}>Mailing Address</Text>
+            <Item inlineLabel>
+              <Label>123 Main St.</Label>
+              <Input />
+            </Item>
 
-            <Input style={styles.inputStyle} placeholder="555-555-5555" />
-          </Row>
-          <Row style={styles.rowStyle}>
-
-              <Text style={styles.textStyle}>Email Address</Text>
-
-            <Input style={styles.inputStyle} placeholder="bob@gmail.com" />
-          </Row>
-          <Row style={styles.rowStyle}>
-
-              <Text style={styles.textStyle}>Mailing Address</Text>
-
-            <Input style={styles.inputStyle} placeholder="452 Main St Greenville SC, 29611" />
-          </Row>
-
-          <Button>
-            <Text style={styles.textStyle}>Save</Text>
-          </Button>
-
-        </Grid>
-
+            <Button>
+              <Text style={styles.textStyle}>Save</Text>
+            </Button>
+          </Form>
+        </Content>
+      </Container>
     );
   };
 };
@@ -52,7 +55,9 @@ const styles = {
     // flex: 1,
     fontFamily: 'Play',
     color: '#fff',
-    fontSize: 18
+    fontSize: 18,
+    paddingTop: 20,
+    paddingLeft: 15
   },
   rowStyle: {
     padding: 15,
